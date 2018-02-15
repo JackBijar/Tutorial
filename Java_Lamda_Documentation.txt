@@ -1,0 +1,88 @@
+:																		DOCUMENTATION ABOUT LAMDA															:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+:	What is Lamda in java ?																		:
+
+=>	
+
+:	Why used Lamda ?																			:
+
+=>	
+	1) Functional Programming.	
+	
+	In case of Java programming language [OOP]
+		Everything is an object.
+		All code block associated with try and catch block.
+	
+	2) Function as a Value
+
+:	How to build a Lamda method from a Java Method ?											:
+
+=>	Write a Simple Java Method :
+	
+Java Method :
+-------------------------------------------------------------------------------------------------
+	public void greet(Gratting gratting)
+	{
+		gratting.perform();
+		
+		System.out.println("In Gratting Method !");
+	}
+-------------------------------------------------------------------------------------------------
+Lamda Function :
+-------------------------------------------------------------------------------------------------
+	storeValue = () => {
+		gratting.perform();
+		
+		System.out.println("In Gratting Method !");
+	};
+-------------------------------------------------------------------------------------------------
+Remove 	=>	Access modifiers, Return Type and Method Name
+Add  	=>	=> and variable name
+
+If you have a One line :
+-------------------------------------------------------------------------------------------------
+	storeValue = () => System.out.println("In Gratting Method !");
+-------------------------------------------------------------------------------------------------
+
+Examples :
+-------------------------------------------------------------------------------------------------
+	doubleNumberFunction = (int a) -> a*2;
+	
+	addNumberFunction = (int a, int b) -> a+b;
+	
+	safeDivitionFunction = (int a, int b) -> {
+		if(b == 0)
+			return 0;
+		return a/b;
+	}
+	
+	stringLength = (String str)	-> str.length();
+-------------------------------------------------------------------------------------------------
+
+:	:
+
+=>	
+
+
+:	:
+
+=>	
+
+
+:	:
+
+=>	
+
+:	:
+
+=>	
+
+:	:
+
+=>	
+
+:	:
+
+=>	
+
